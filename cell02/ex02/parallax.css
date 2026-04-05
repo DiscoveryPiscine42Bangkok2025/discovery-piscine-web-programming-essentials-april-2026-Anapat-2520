@@ -1,0 +1,26 @@
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.black-block {
+    height: 150vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.t {
+    background-image: url(https://www.breatheazy.co.uk/wp-content/uploads/2023/09/Untitled-design-35-1080x675.png);
+}
+.b {background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF5EmOMKXYngYyAbipAejzp-ikfYw4PmDH0g&s);
+}
