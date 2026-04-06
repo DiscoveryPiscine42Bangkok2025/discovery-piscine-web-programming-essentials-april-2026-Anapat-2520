@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="balloon.css">
+</head>
+<body>
+
+<div id="balloon"></div>
+
+<script>
+    const balloon = document.getElementById('balloon');
+    const colors = ['red', 'green', 'blue'];
+    let colorIndex = 0;
+    let currentSize = 200;
+
+    const updateBalloon = () => {
+        if (currentSize > 420) {
+            currentSize = 200;
+            colorIndex = 0;
+        }
+        balloon.style.width = currentSize + 'px';
+        balloon.style.height = currentSize + 'px';
+        balloon.style.backgroundColor = colors[colorIndex];
+    };
+
+    balloon.addEventListener('click', () => {
+        currentSize += 10;
+        colorIndex = (colorIndex + 1) % colors.length;
+        updateBalloon();
+    });
+
+    balloon.addEventListener('mouseleave', () => {
+        if (currentSize > 200) {
+            currentSize -= 5;
+            // Reverse color logic: (current - 1 + length) % length
+            colorIndex = (colorIndex - 1 + colors.length) % colors.length;
+            updateBalloon();
+        }
+    });
+</script>
+
+</body>
+</html>
