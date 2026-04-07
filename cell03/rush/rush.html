@@ -12,15 +12,15 @@
 <body>
     
 <nav id="bar" class="navbar navbar-expand-lg fixed-top shadow-sm">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand fw-bold" >My First Web</a>
             <div class="navbar-nav ms-auto d-flex flex-row">
-                <a class="nav-link fw-semibold" href="#Introduction">
-                    <i class="fa-solid fa-user"></i>Introduction</a>
-                <a class="nav-link fw-semibold" href="#Member">
-                    <i class="fa-solid fa-user-group"></i>Member</a>
-                <a class="nav-link fw-semibold" href="#Contact">
-                    <i class="fa-solid fa-envelope"></i>Contact</a>
+                <a class="nav-link fw-semibold" href="rush.html">
+                    <i class="fa-soild fa-user"></i>Home</a>
+                <a class="nav-link fw-semibold" href="resume1.html">
+                    <i class="fa-soild fa-user"></i>Resume1</a>
+                <a class="nav-link fw-semibold" href="Resume2">
+                    <i class="fa-soild fa-user"></i>Resume2</a>
             </div>
         </div>
 </nav>
@@ -28,35 +28,48 @@
 <section id="Introduction">
     <div class="container text-center">
         <div class="intro d-inline-block p-5">
-            <h1 class="display-5 fw-bold mb-2">My First Web</h1>
+            <h1 class="display-5 fw-bold mb-2 ">
+                <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span><span>!</span></h1>
             <p class="text-muted fs-5">This is my first web</p>
         </div>
     </div>
 </section>
 
 <section id="Member" class="py-5">
-    <div class="container text-center">
-        <h2 class="fw-bold mb-5">Member</h2>
-        
+    <div class="container">
+        <h2 class="fw-bold mb-5">Members</h2>
         <div class="row"> 
-            
             <div class="col-md-6 col-12">
-                <div class="card h-100 p-3 shadow-sm">
-                    <img width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNuu6NDMzt2sSz9IGiC1duvy2xOseNyjAVFg&s" class="mx-auto d-block" >
-                    <h3 class="fw-bold">Poom</h3>
-                    <p class="text-muted">Leader</p>
+                <div class="card purple">
+                    <div class="card-number">01</div>
+                    <img src="https://i.redd.it/ya8qikz9kn0f1.png" class="img-fluid rounded mb-3" style="max-width: 200px;" >
+                    <h2 class="fw-bold">Poom</h2>
+                    <p class="role">Leader</p>
+                    <div class="tags">
+                        <span><HTML></span><span>CSS</span><span>JS</span>
+                    </div>
+                    <div class="arrow-btn"><i class="fa-soild fa-arrow-right"></i></div>
                 </div>
             </div>
 
             <div class="col-md-6 col-12">
-                <div class="card h-100 p-3 shadow-sm">
-                    <img width="400" src="https://i.redd.it/ya8qikz9kn0f1.png" class="mx-auto d-block">
-                    <h3 class="fw-bold">Marky</h3>
-                    <p class="text-muted">Member</p>
+                <div class="card green">
+                    <div class="card-number">02</div>
+                    <img src="https://i.redd.it/ya8qikz9kn0f1.png" class="img-fluid rounded mb-3" style="max-width: 200px;">
+                    <h2 class="fw-bold">Marky</h2>
+                    <p class="role">Member</p>
+                    <div class="tags">
+                        <span>REACT</span><span>NODE</span><span>PYTHON</span>
+                    </div>
+                    <div class="arrow-btn"><i class="fa-soild fa-arrow-right"></i></div>
                 </div>
             </div>
-
-        </div> </div>
+        </div>
+    </div>
 </section>
+<footer class="text-center py-4 mt-5 border-top bg-white">
+    <p class="text-muted mb-0">&copy; 2026 My First Web - Created for 42 Piscine</p>
+    <small>Made with ❤️ by Poom and Mark</small>
+</footer>
 </body>
 </html>
